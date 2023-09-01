@@ -1,18 +1,91 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "gradient-conic":
+          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      },
+      colors: {
+        link: "#7b61ff",
+        primary: {
+          100: "#d4d9f0",
+          200: "#a8b3e0",
+          300: "#7d8dd1",
+          400: "#5167c1",
+          500: "#2641b2",
+          600: "#1e348e",
+          700: "#17276b",
+          800: "#0f1a47",
+          900: "#080d24",
+        },
+        secondary: {
+          100: "#eeeef1",
+          200: "#dedde4",
+          300: "#cdcbd6",
+          400: "#bdbac9",
+          500: "#aca9bb",
+          600: "#8f8d9c",
+          700: "#72707e",
+          800: "#56545f",
+          900: "#393741",
+        },
+        success: {
+          100: "#b7f2e5",
+          200: "#89e4d0",
+          300: "#5cd7bc",
+          400: "#2ec9a7",
+          500: "#00bc93",
+          600: "#009676",
+          700: "#007158",
+          800: "#004b3b",
+          900: "#00261d",
+        },
+        error: {
+          100: "#fad9db",
+          200: "#f4b3b7",
+          300: "#ef8d94",
+          400: "#ec7063",
+          500: "#e4414c",
+          600: "#b6343d",
+          700: "#89272e",
+          800: "#5b1a1e",
+          900: "#2e0d0f",
+        },
+        warning: {
+          100: "#fefee3",
+          200: "#fdfcc6",
+          300: "#fbfbaa",
+          400: "#faf98d",
+          500: "#f9f871",
+          600: "#d4d35b",
+          700: "#afae45",
+          800: "#8a892f",
+          900: "#656419",
+        },
+        grey: {
+          light: "#f5f5f5",
+          medium: "#e5e5e5",
+          dark: "#d1d1d1",
+          darker: "#acacac",
+        },
+        dark: {
+          strong: "#000000",
+          medium: "#4f4f4f",
+        },
+        "action ": {
+          red: "#ed584f",
+          green: "#29bb89",
+          yellow: "#ffd56b",
+        },
       },
     },
   },
   plugins: [],
-}
+};
